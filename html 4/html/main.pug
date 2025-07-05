@@ -1,0 +1,22 @@
+mixin topic-card(type, topic, image)
+    div(class="main__card")
+        div(class="main__card-img")
+            img(class="main__card-picture" src=image alt="")
+        div(class="main__card-type")=type 
+        div(class="main__card-topic")=topic
+        div(class="main__card-user")
+            span(class="main__card-author") Niek Bove 
+            span(class="main__card-date") April 8, 2018 
+            span(class="main__card-views") 3k Views
+        div(class="main__card-description") Structured gripped tape invisible moulded cups for suppor firm hold strong powermesh front liner sport detail. Warmth comfort hangs loosely from the body large pocket at the front full button...
+main
+    div(class="main")
+       +topic-card("Street", "Man in the street", "../media/png/1.png")
+       +topic-card("Style", "Minimalism", "../media/png/2.png")
+       +topic-card("Urban environment", "Urban photography", "../media/png/3.png")
+       +topic-card("Cafe", "Alcohol", "../media/png/4.png")
+       +topic-card("Party", "Holiday with friends", "../media/png/5.png")
+       +topic-card("Contrast", "Contrast in a photo shoot", "../media/png/6.png")
+       +topic-card("Meeting", "Meeting with colleagues", "../media/png/7.png")
+       +topic-card("Embankment", "Beach with pier", "../media/png/8.png")
+       +topic-card("Performances at the club", "New emotions", "../media/png/9.png")
